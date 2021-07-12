@@ -1,6 +1,6 @@
 # wallaclone
 
-# utiliza solo 3 campos : 
+# utiliza solo 3 campos para el Registro y Login de Usuarios: 
         username": string,
         email: string,
         password: string
