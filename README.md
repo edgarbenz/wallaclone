@@ -1,10 +1,10 @@
 # wallaclone
 
-# para Registrar usuarios:
-localhost:3100/api/usuarios/registro
+# utiliza solo 3 campos : 
+        username": string,
+        email: string,
+        password: string
 
-# para hacer login:
-localhost:3100/api/usuarios/login
 
 # Validaciones para el registro de usuarios (hasta hoy 12Julio2021): 
 Si haces registro de un usuario existente el api te contestará:
@@ -12,7 +12,7 @@ Si haces registro de un usuario existente el api te contestará:
     "error": "Usuario ya existe en la base de datos"
 }
 
-Si hacer registro de un usuario que no existe, te muestra un JSON con el usuario registrado:
+Si haces un registro de un usuario que no existe, te muestra un JSON con el usuario registrado satisfactoriamente:
 {
     "usuarioCreado": {
         "_id": "60ebd791fa6d934078141d6f",
