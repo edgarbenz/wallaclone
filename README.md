@@ -1,4 +1,4 @@
-# wallaclone
+# wallaclone API
 
 # utiliza solo 3 campos para el Registro y Login de Usuarios: 
 Esquema: Usuario: {
