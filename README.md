@@ -1,10 +1,11 @@
 # wallaclone
 
 # utiliza solo 3 campos para el Registro y Login de Usuarios: 
+Esquema: Usuario: {
         username": string,
         email: string,
         password: string
-
+}
 
 # Validaciones para el registro de usuarios (hasta hoy 12Julio2021): 
 Si haces registro de un usuario existente el api te contestará:
