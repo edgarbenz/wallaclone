@@ -1,20 +1,16 @@
-# wallaclone API
+Project Name: Wallaclone API
 
-# utiliza solo 3 campos para el Registro y Login de Usuarios: 
-Esquema: Usuario: {
+This project is did in Node.JS
+
+This project consist in a API with Register and Login of users:
         username": string,
         email: string,
         password: string
-}
-
-# Validaciones para el registro de usuarios (hasta hoy 12Julio2021): 
-Si haces registro de un usuario existente el api te contestará:
-{
+        
+If you try to register an existent user , the API answer you:
     "error": "Usuario ya existe en la base de datos"
-}
 
-Si haces un registro de un usuario que no existe, te muestra un JSON con el usuario registrado satisfactoriamente:
-{
+If you register an user that don't exist, it show you a JSON with the user register successfully:
     "usuarioCreado": {
         "_id": "60ebd791fa6d934078141d6f",
         "username": "edgarbenz23",
@@ -22,15 +18,13 @@ Si haces un registro de un usuario que no existe, te muestra un JSON con el usua
         "password": "12345678",
         "__v": 0
     }
-}
 
-# Validaciones para hacer login (hasta hoy 12Julio2021): 
-Si haces un login de un usuario que si existe en la Base de datos el api te contesta:
+If you do a login of a existent user on Data Base, the API answer you:
 {
     "resultado": "Usuario autenticado satisfactoriamente"
 }
 
-Si haces login con un email o contraseña que no existen en la base de datos el api te contesta:
+If you doing a login with a email or password that don't exist in the Data Base, the API answer you:
 {
     "error": "Usuario NO existe en nuestra base de datos"
 }
